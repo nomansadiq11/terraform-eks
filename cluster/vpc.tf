@@ -35,9 +35,9 @@ resource "aws_subnet" "demo" {
 resource "aws_internet_gateway" "demo" {
   vpc_id = "${aws_vpc.demo.id}"
 
-  tags {
-    Name = "terraform-eks-demo"
-  }
+  # tags {
+  #   Name = "terraform-eks-demo"
+  # }
 }
 
 resource "aws_route_table" "demo" {
